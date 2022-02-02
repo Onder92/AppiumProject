@@ -1,0 +1,75 @@
+Created by testinium on 1.02.2022
+
+This is a concept file with following syntax for each concept.
+# Uygulamanın açıldığını kontrol et
+* "5" saniye bekle
+* id "com.ozdilek.ozdilekteyim:id/textView" li elementi bul ve "Mağazadan Alışveriş" alanını kontrol et
+
+
+# Alışverişe başla butonuna tıkla
+* id "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" li elemente tıkla
+* "5" saniye bekle
+
+
+# Alışveriş sayfasının açıldığını doğrula
+* id "com.ozdilek.ozdilekteyim:id/tvMarketName" li elementi bul ve "Market" alanını kontrol et
+* "3" saniye bekle
+
+
+# Kategoriler sayfasına gir
+* id "com.ozdilek.ozdilekteyim:id/nav_categories" li elemente tıkla
+* "3" saniye bekle
+
+
+# Kategoriler sayfasına girildiğini kontrol et
+* xpath "//android.widget.LinearLayout[@content-desc='Kategoriler']/android.widget.TextView" li elementi bul ve "Kategoriler" alanını kontrol et
+
+
+# Menüden <kadın> seçeneğine tıkla
+* List içerisinde indexe tıkla "//*[@resource-id='com.ozdilek.ozdilekteyim:id/recyclerCategories']/android.widget.RelativeLayout/android.widget.TextView"
+* "2" saniye bekle
+
+
+# Pantolon kategorisini aç
+* xpath "//*[@text='Pantolon']" li elemente tıkla
+* "2" saniye bekle
+
+
+# Sayfayı aşağıya kaydır
+* Sayfayı kaydir "400" "1800" "400" "400" "3000"
+* "2" saniye bekle
+
+
+# Rastgele bir ürün seç
+* Elementler "//*[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" arasından rasgele bir tanesini seç ve tıkla
+* "2" saniye bekle
+
+
+# Ürün detay sayfasında olduğunu kontrol et
+* Sayfayı kaydir "500" "1800" "500" "500" "1000"
+* xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/relLaySizeView']/android.widget.TextView" li elementi bul ve "Beden Tablosu" alanını kontrol et
+
+
+# Favoriler butonuna tıkla
+* id "com.ozdilek.ozdilekteyim:id/imgFav" li elemente tıkla
+* "2" saniye bekle
+
+
+# Giriş sayfasında olduğunu kontrol et
+* xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/btnLogin']" li elementi bul ve "Giriş Yap" alanını kontrol et
+
+
+# Kullanıcı adı ve şifre gir
+* id "com.ozdilek.ozdilekteyim:id/etEposta" li elementi bul ve "onder" değerini yaz
+* id "com.ozdilek.ozdilekteyim:id/etPassword" li elementi bul ve "1234" değerini yaz
+
+
+# Geri butonuna bas
+* id "com.ozdilek.ozdilekteyim:id/ivBack" li elemente tıkla
+* "2" saniye bekle
+* id "com.ozdilek.ozdilekteyim:id/ivBack" li elemente tıkla
+
+
+# Sepete ürün ekle
+* Elementler "//*[@resource-id='com.ozdilek.ozdilekteyim:id/tvInSizeItem']" arasından rasgele bir tanesini seç ve tıkla
+* id "com.ozdilek.ozdilekteyim:id/relLayAddCartBtn" li elemente tıkla
